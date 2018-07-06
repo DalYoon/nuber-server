@@ -6,9 +6,11 @@
 
 ```
 <!-- package.json -->
+...
 "scripts": {
     "dev": "cd src && nodemon --exec ts-node index.ts -e ts, graphql"
 }
+...
 ```
 
 ## section.log
