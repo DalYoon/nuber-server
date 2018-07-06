@@ -1,0 +1,8 @@
+{
+  "name": "nuber-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DalYoon/nuber-server",
+  "author": "dal yoon <yeodal89@gmail.com>",
+  "license": "MIT"
+}
