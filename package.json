@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/DalYoon/nuber-server",
   "author": "dal yoon <yeodal89@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "nodemon": "^1.17.5",
+    "ts-node": "^7.0.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.2"
+  }
 }
