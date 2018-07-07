@@ -3,10 +3,11 @@
 ## tips
 
 - graphql-yoga contains the dependencies below
-- express/apollo-server: Performant, extensible web server framework
-- graphql-subscriptions/subscriptions-transport-ws: GraphQL subscriptions server
-- graphql.js/graphql-tools: GraphQL engine & schema helpers
-- graphql-playground: Interactive GraphQL IDE
+
+  - express/apollo-server: Performant, extensible web server framework
+  - graphql-subscriptions/subscriptions-transport-ws: GraphQL subscriptions server
+  - graphql.js/graphql-tools: GraphQL engine & schema helpers
+  - graphql-playground: Interactive GraphQL IDE
 
 - be careful to install `@types` dependencies at **devDependencies**
 - import `cors` before import `graphql-yoga` in `./src/app.ts` file
