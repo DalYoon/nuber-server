@@ -31,6 +31,8 @@
 - tslint-config-prettier
 - @types/node
 
+---
+
 # 1.2 Project Setup. Typescript and NodeJS
 
 ## section.log
