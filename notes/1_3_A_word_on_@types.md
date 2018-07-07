@@ -2,12 +2,15 @@
 
 ## tips
 
-- @types dependencies are just type definitions for the follow dependencies from `@types/`
-  type definition for node: `@types/node`
-  type definition for express: `@types/express`
+- `@types` dependencies are just type definitions for the follow dependencies from `@types/`
+
+```
+  type definition for node: @types/node
+  type definition for express: @types/express
   .
   .
   .
+```
 
 ## section.log
 
