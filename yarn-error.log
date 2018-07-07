@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/yarn add -D @types/moragn
+  /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/yarn add -D @types/merge-graphql-schemas
 
 PATH: 
   /Users/dalyoon/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dalyoon/Downloads/google-cloud-sdk/bin:/Users/dalyoon/Library/Android/sdk/tools:/Users/dalyoon/Library/Android/sdk/tools/bin:/Users/dalyoon/Library/Android/sdk/platform-tools:/Users/dalyoon/Library/Android/sdk/tools:/Users/dalyoon/Library/Android/sdk/tools/bin:/Users/dalyoon/Library/Android/sdk/platform-tools
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fmoragn: Not found
+  Error: https://registry.yarnpkg.com/@types%2fmerge-graphql-schemas: Not found
       at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:65327:18)
       at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:133155:22)
       at Request.emit (events.js:182:13)
@@ -36,6 +36,8 @@ npm manifest:
     "license": "MIT",
     "devDependencies": {
       "@types/cors": "^2.8.4",
+      "@types/helmet": "^0.0.38",
+      "@types/morgan": "^1.7.35",
       "@types/node": "^10.5.2",
       "nodemon": "^1.17.5",
       "ts-node": "^7.0.0",
@@ -47,8 +49,10 @@ npm manifest:
     },
     "dependencies": {
       "cors": "^2.8.4",
+      "graphql-tools": "^3.0.5",
       "graphql-yoga": "^1.14.12",
       "helmet": "^3.12.1",
+      "merge-graphql-schemas": "^1.5.2",
       "morgan": "^1.9.0"
     }
   }
@@ -119,9 +123,21 @@ Lockfile:
     version "0.13.3"
     resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.13.3.tgz#23af65796d341f93ef5b485138bd52c67786452d"
   
+  "@types/helmet@^0.0.38":
+    version "0.0.38"
+    resolved "https://registry.yarnpkg.com/@types/helmet/-/helmet-0.0.38.tgz#88f19752375565903f76fecc50dd99ed08131f35"
+    dependencies:
+      "@types/express" "*"
+  
   "@types/mime@*":
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
+  
+  "@types/morgan@^1.7.35":
+    version "1.7.35"
+    resolved "https://registry.yarnpkg.com/@types/morgan/-/morgan-1.7.35.tgz#6358f502931cc2583d7a94248c41518baa688494"
+    dependencies:
+      "@types/express" "*"
   
   "@types/node@*", "@types/node@^10.5.2":
     version "10.5.2"
@@ -656,6 +672,10 @@ Lockfile:
     version "0.6.0"
     resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
   
+  deepmerge@^2.1.0:
+    version "2.1.1"
+    resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.1.1.tgz#e862b4e45ea0555072bf51e7fd0d9845170ae768"
+  
   define-property@^0.2.5:
     version "0.2.5"
     resolved "https://registry.yarnpkg.com/define-property/-/define-property-0.2.5.tgz#c35b1ef918ec3c990f9a5bc57be04aacec5c8116"
@@ -965,7 +985,7 @@ Lockfile:
       is-glob "^3.1.0"
       path-dirname "^1.0.0"
   
-  glob@^7.0.5:
+  glob@^7.0.5, glob@^7.1.2:
     version "7.1.2"
     resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
     dependencies:
@@ -1081,7 +1101,7 @@ Lockfile:
       iterall "^1.1.3"
       uuid "^3.1.0"
   
-  graphql-tools@^3.0.2:
+  graphql-tools@^3.0.2, graphql-tools@^3.0.5:
     version "3.0.5"
     resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-3.0.5.tgz#544542dbf2fddc8c3d7d654965285a3bc747b10b"
     dependencies:
@@ -1532,6 +1552,14 @@ Lockfile:
   merge-descriptors@1.0.1:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
+  
+  merge-graphql-schemas@^1.5.2:
+    version "1.5.2"
+    resolved "https://registry.yarnpkg.com/merge-graphql-schemas/-/merge-graphql-schemas-1.5.2.tgz#7e75afb56cea6ff163924744846817d054c1ebaf"
+    dependencies:
+      deepmerge "^2.1.0"
+      glob "^7.1.2"
+      is-glob "^4.0.0"
   
   methods@~1.1.2:
     version "1.1.2"

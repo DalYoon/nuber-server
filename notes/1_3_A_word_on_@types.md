@@ -15,7 +15,7 @@
 ## section.log
 
 - no added code
-- explaination for the dependencies start with @types
+- explanation for the dependencies start with @types
 
 ## issue
 
