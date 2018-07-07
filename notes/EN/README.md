@@ -64,6 +64,8 @@ package.json
 
 ### devDependencies
 
+---
+
 # 1.3 A word on @types
 
 ## section.log
@@ -94,6 +96,8 @@ package.json
 ### dependencies
 
 ### devDependencies
+
+---
 
 # 1.4 GraphQL Yoga and Express part One
 
@@ -136,6 +140,8 @@ package.json
 - @types/morgan
 - @types/cors
 
+---
+
 # 1.5 GraphQL Yoga and Express part Two
 
 ## section.log
@@ -159,6 +165,8 @@ package.json
 ### dependencies
 
 ### devDependencies
+
+---
 
 # 1.6 API and Schema Structue part One
 
@@ -192,6 +200,8 @@ package.json
 - merge-graphql-schemas
 
 ### devDependencies
+
+---
 
 # 1.7 API and Schema Structue part Two
 
