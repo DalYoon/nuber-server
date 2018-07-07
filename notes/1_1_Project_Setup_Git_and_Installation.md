@@ -2,7 +2,7 @@
 
 ## section.log
 
-- make project `yarn init`
+- make project
 - add dependencies
 - config `tsconfig.json`, `tslint.json`
 
