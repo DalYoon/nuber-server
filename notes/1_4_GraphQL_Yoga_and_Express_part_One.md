@@ -1,5 +1,11 @@
 # 1.4 GraphQL Yoga and Express part One
 
+## section.log
+
+- add graphql-yoga dependencies
+- add middleware dependencies, `@types` for each of them
+- code `./src/app.ts` for basic setting of graphql-yoga, middlewares
+
 ## tips
 
 - graphql-yoga contains the dependencies below
@@ -11,12 +17,6 @@
 
 - be careful to install `@types` dependencies at **devDependencies**
 - just make sure import `cors` **before** import `graphql-yoga` in `./src/app.ts` file
-
-## section.log
-
-- add graphql-yoga dependencies
-- add middleware dependencies, `@types` for each of them
-- code `./src/app.ts` for basic setting of graphql-yoga, middlewares
 
 ## issue
 

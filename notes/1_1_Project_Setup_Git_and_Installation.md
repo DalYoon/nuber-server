@@ -1,14 +1,14 @@
 # 1.1 Project Setup- Git & Installation
 
-## tips
-
-- `tsc --init` command will create tsconfig file automatically
-
 ## section.log
 
 - make project `yarn init`
 - add dependencies
 - config `tsconfig.json`, `tslint.json`
+
+## tips
+
+- `tsc --init` command will create tsconfig file automatically
 
 ## issue
 

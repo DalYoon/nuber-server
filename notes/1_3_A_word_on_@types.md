@@ -1,5 +1,10 @@
 # 1.3 A word on @types
 
+## section.log
+
+- no added code
+- explanation for the dependencies start with @types
+
 ## tips
 
 - `@types` dependencies are just type definitions for the follow dependencies after `@types/`
@@ -11,11 +16,6 @@
   .
   .
 ```
-
-## section.log
-
-- no added code
-- explanation for the dependencies start with @types
 
 ## issue
 
