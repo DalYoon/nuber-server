@@ -178,13 +178,13 @@ import { GraphQLServer } from "graphql-yoga";
 ## section.log
 
 - explanation for basic schema and query structure
-- create `./src/api/` for defining types, queries, resolvers
-- create `./src/schema.ts` for merging types, queries, resolvers
+- create `./src/api/` for defining types, resolvers
+- create `./src/schema.ts` for merging types, resolvers
 
 ## tips
 
 - `./src/api/` directory have types, queries, resolvers to handle datas
-- `./src/schema.ts` file merges `./src/api/` directory which is every types, queries, resolvers
+- `./src/schema.ts` file merges `./src/api/` directory which is every types, resolvers
 - `merge-graphql-schemas` dependency doesn't have `type` definition. So when you import this dependency in your code, vcs wouldn't give you any description or guide for type of it. Don't panic. It's totally fine
 
 ```javascript
@@ -216,11 +216,23 @@ import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";
 
 ## section.log
 
--
+- write `./src/schema.ts` file for merging `query`, `resolvers`
+- get `.graphql`, `resolvers` file with through `fileLoader/merge-graphql-schemas`
+- merge it, put it into `makeExcutableSchema/graphql-tools`
+- put generated schema into `GraphqlServer.schema`
 
 ## tips
 
--
+- `path.join(__dirname, './')` returns `/files/current/directory/`
+
+```javascript
+// sample code
+const path = require("path");
+const myPath = path.join(__dirname, "./");
+console.log(myPath);
+
+// it returns => ~project-path/nuber-server/src/
+```
 
 ## issue
 
@@ -233,3 +245,5 @@ import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";
 ### dependencies
 
 ### devDependencies
+
+---

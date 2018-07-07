@@ -3,13 +3,13 @@
 ## section.log
 
 - explanation for basic schema and query structure
-- create `./src/api/` for defining types, queries, resolvers
-- create `./src/schema.ts` for merging types, queries, resolvers
+- create `./src/api/` for defining types, resolvers
+- create `./src/schema.ts` for merging types, resolvers
 
 ## tips
 
 - `./src/api/` directory have types, queries, resolvers to handle datas
-- `./src/schema.ts` file merges `./src/api/` directory which is every types, queries, resolvers
+- `./src/schema.ts` file merges `./src/api/` directory which is every types, resolvers
 - `merge-graphql-schemas` dependency doesn't have `type` definition. So when you import this dependency in your code, vcs wouldn't give you any description or guide for type of it. Don't panic. It's totally fine
 
 ```javascript
