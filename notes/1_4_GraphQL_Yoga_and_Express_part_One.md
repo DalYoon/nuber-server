@@ -10,7 +10,7 @@
   - graphql-playground: Interactive GraphQL IDE
 
 - be careful to install `@types` dependencies at **devDependencies**
-- just make sure import `cors` before import `graphql-yoga` in `./src/app.ts` file
+- just make sure import `cors` **before** import `graphql-yoga` in `./src/app.ts` file
 
 ## section.log
 

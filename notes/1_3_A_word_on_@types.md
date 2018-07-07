@@ -2,7 +2,7 @@
 
 ## tips
 
-- `@types` dependencies are just type definitions for the follow dependencies from `@types/`
+- `@types` dependencies are just type definitions for the follow dependencies after `@types/`
 
 ```
   @types/node: type definitions for node

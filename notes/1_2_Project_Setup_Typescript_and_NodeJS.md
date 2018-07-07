@@ -15,7 +15,7 @@
 
 ## section.log
 
-- write `yarn dev` script
+- write script for cammand `yarn dev`
 
 ## issue
 
