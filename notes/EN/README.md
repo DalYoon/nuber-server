@@ -16,8 +16,8 @@
 
 ## links
 
-- [tsconfig file config](https://github.com/nomadcoders/nuber-server/blob/6ae7fc176776d85c987df1263edd7e05041b1661/tsconfig.json)
-- [tslint file config](https://github.com/nomadcoders/nuber-server/blob/6ae7fc176776d85c987df1263edd7e05041b1661/tslint.json)
+- [tsconfig.json file](https://github.com/nomadcoders/nuber-server/blob/6ae7fc176776d85c987df1263edd7e05041b1661/tsconfig.json)
+- [tslint.json file](https://github.com/nomadcoders/nuber-server/blob/6ae7fc176776d85c987df1263edd7e05041b1661/tslint.json)
 
 ## added dependencies
 
@@ -41,9 +41,9 @@
 
 ## tips
 
-- the script below will monitor the change of ts file and also graphql file automatically (nodemon, ts-node)
+- the script below will monitor the change of .ts file and also .graphql file automatically (nodemon, ts-node)
 
-```
+```json
 package.json
 ...
 "scripts": {
@@ -103,8 +103,8 @@ package.json
 
 ## section.log
 
-- add graphql-yoga dependencies
-- add middleware dependencies, `@types` for each of them
+- add graphql-yoga dependency
+- add middleware dependencies, and `@types` for each of them
 - code `./src/app.ts` for basic setting of graphql-yoga, middlewares
 
 ## tips
@@ -118,6 +118,11 @@ package.json
 
 - be careful to install `@types` dependencies at **devDependencies**
 - just make sure import `cors` **before** import `graphql-yoga` in `./src/app.ts` file
+
+```javascript
+import cors from "cors";
+import { GraphQLServer } from "graphql-yoga";
+```
 
 ## issue
 
@@ -181,7 +186,11 @@ package.json
 - `./src/api/` directory have types, queries, resolvers to handle datas
 - `./src/schema.ts` file merges `./src/api/` directory which is every types, queries, resolvers
 - `merge-graphql-schemas` dependency doesn't have `type` definition. So when you import this dependency in your code, vcs wouldn't give you any description or guide for type of it. Don't panic. It's totally fine
-- `import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";`
+
+```javascript
+import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";
+```
+
 - `path` is provided by `node` as default
 
 ## issue
@@ -207,17 +216,11 @@ package.json
 
 ## section.log
 
-- explanation for basic schema and query structure
-- create `./src/api/` for defining types, queries, resolvers
-- create `./src/schema.ts` for merging types, queries, resolvers
+-
 
 ## tips
 
-- `./src/api/` directory have types, queries, resolvers to handle datas
-- `./src/schema.ts` file merges `./src/api/` directory which is every types, queries, resolvers
-- `merge-graphql-schemas` dependency doesn't have `type` definition. So when you import this dependency in your code, vcs wouldn't give you any description or guide for type of it. Don't panic. It's totally fine
-- `import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";`
-- `path` is provided by `node` as default
+-
 
 ## issue
 
@@ -225,13 +228,8 @@ package.json
 
 ## links
 
-[merge-graphql-schemas docs](https://github.com/okgrow/merge-graphql-schemas)
-
 ## added dependencies
 
 ### dependencies
-
-- graphql-tools
-- merge-graphql-schemas
 
 ### devDependencies

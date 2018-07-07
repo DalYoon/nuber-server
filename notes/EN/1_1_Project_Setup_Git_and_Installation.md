@@ -16,8 +16,8 @@
 
 ## links
 
-- [tsconfig file config](https://github.com/nomadcoders/nuber-server/blob/6ae7fc176776d85c987df1263edd7e05041b1661/tsconfig.json)
-- [tslint file config](https://github.com/nomadcoders/nuber-server/blob/6ae7fc176776d85c987df1263edd7e05041b1661/tslint.json)
+- [tsconfig.json file](https://github.com/nomadcoders/nuber-server/blob/6ae7fc176776d85c987df1263edd7e05041b1661/tsconfig.json)
+- [tslint.json file](https://github.com/nomadcoders/nuber-server/blob/6ae7fc176776d85c987df1263edd7e05041b1661/tslint.json)
 
 ## added dependencies
 

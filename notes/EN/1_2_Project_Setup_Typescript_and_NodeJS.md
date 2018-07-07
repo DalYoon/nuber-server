@@ -6,7 +6,7 @@
 
 ## tips
 
-- the script below will monitor the change of ts file and also graphql file automatically (nodemon, ts-node)
+- the script below will monitor the change of .ts file and also .graphql file automatically (nodemon, ts-node)
 
 ```
 package.json

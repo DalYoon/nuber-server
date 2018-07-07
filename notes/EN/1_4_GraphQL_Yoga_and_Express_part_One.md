@@ -3,7 +3,7 @@
 ## section.log
 
 - add graphql-yoga dependencies
-- add middleware dependencies, `@types` for each of them
+- add middleware dependencies, and `@types` for each of them
 - code `./src/app.ts` for basic setting of graphql-yoga, middlewares
 
 ## tips
@@ -17,6 +17,11 @@
 
 - be careful to install `@types` dependencies at **devDependencies**
 - just make sure import `cors` **before** import `graphql-yoga` in `./src/app.ts` file
+
+```javascript
+import cors from "cors";
+import { GraphQLServer } from "graphql-yoga";
+```
 
 ## issue
 
