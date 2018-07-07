@@ -5,8 +5,8 @@
 - `@types` dependencies are just type definitions for the follow dependencies from `@types/`
 
 ```
-  type definition for node: @types/node
-  type definition for express: @types/express
+  @types/node: type definitions for node
+  @types/express: type definitions for express
   .
   .
   .
