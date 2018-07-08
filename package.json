@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
     "graphql-tools": "^3.0.5",
     "graphql-yoga": "^1.14.12",
     "helmet": "^3.12.1",
