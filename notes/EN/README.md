@@ -320,7 +320,7 @@ export interface SayHelloQueryArgs {
 }
 ```
 
-- the argument: `name` of sayHello Query in `.graphql` goes intercafe: `SayHelloQueryArgs` in `graph.d.ts`
+- the argument: `name` of sayHello Query in `.graphql` goes interface: `SayHelloQueryArgs` in `graph.d.ts`
 
 ## issue
 
