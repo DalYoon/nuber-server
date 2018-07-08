@@ -2,8 +2,8 @@
 
 ## section.log
 
-- define query argument and merge it
-- usage for merged query argument
+- define query argument and merge it to type
+- usage for merged query argument type
 
 ## tips
 
