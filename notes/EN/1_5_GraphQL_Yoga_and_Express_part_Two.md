@@ -2,7 +2,7 @@
 
 ## section.log
 
-- code `./src/index.ts` for options of graphql-yoga
+- code `./src/index.ts` for running graphql-yoga
 
 ## tips
 

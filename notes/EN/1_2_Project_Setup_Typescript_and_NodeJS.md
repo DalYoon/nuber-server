@@ -7,12 +7,13 @@
 ## tips
 
 - the script below will monitor the change of .ts file and also .graphql file automatically (nodemon, ts-node)
+- just make sure there is no space between file types `ts,graphql`
 
 ```
 package.json
 ...
 "scripts": {
-    "dev": "cd src && nodemon --exec ts-node index.ts -e ts, graphql"
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql"
 }
 ...
 ```

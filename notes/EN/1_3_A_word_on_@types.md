@@ -2,7 +2,6 @@
 
 ## section.log
 
-- no added code
 - explanation for the dependencies start with @types
 
 ## tips

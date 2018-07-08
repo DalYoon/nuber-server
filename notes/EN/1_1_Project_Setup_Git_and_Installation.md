@@ -3,7 +3,7 @@
 ## section.log
 
 - make project
-- add dependencies
+- add basic dependencies
 - config `tsconfig.json`, `tslint.json`
 
 ## tips

@@ -3,7 +3,7 @@
 ## section.log
 
 - make project
-- add dependencies
+- add basic dependencies
 - config `tsconfig.json`, `tslint.json`
 
 ## tips
@@ -42,6 +42,7 @@
 ## tips
 
 - the script below will monitor the change of .ts file and also .graphql file automatically (nodemon, ts-node)
+- just make sure there is no space between file types `ts,graphql`
 
 ```json
 package.json
@@ -70,7 +71,6 @@ package.json
 
 ## section.log
 
-- no added code
 - explanation for the dependencies start with @types
 
 ## tips
@@ -151,7 +151,7 @@ import { GraphQLServer } from "graphql-yoga";
 
 ## section.log
 
-- code `./src/index.ts` for options of graphql-yoga
+- code `./src/index.ts` for running graphql-yoga
 
 ## tips
 
@@ -226,7 +226,7 @@ import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";
 - `path.join(__dirname, './')` returns `/files/current/directory/`
 
 ```javascript
-// sample code
+// sample code (code path = ~project-path/nuber-server/src/test.js)
 const path = require("path");
 const myPath = path.join(__dirname, "./");
 console.log(myPath);
@@ -245,5 +245,53 @@ console.log(myPath);
 ### dependencies
 
 ### devDependencies
+
+---
+
+# 1.8 Graphql To Typescript
+
+## section.log
+
+- very important leture
+- how to merge types
+- make script to merge types
+
+## tips
+
+- types merging process:
+
+  1.  with `gql-merge`, merge all `.graphql` files in `./src/api/` into one file `./src/schema.graphql`
+  2.  with `graphql-to-typescript`, merge all types in `./src/schema.graphql` to `./src/types/graph.d.ts`
+
+```json
+// script sample
+package.json
+...
+"script": {
+    ...
+    "pretypes": "gql-merge --out-file ./src/schema.graphql ./src/api/**/*.graphql",
+    "types": "graphql-to-typescript ./src/schema.graphql ./types/graph.d.ts",
+}
+...
+```
+
+- to proceed merging process above, you need `babel-rumtime` as dev dependency
+- after all, you can get `graph.d.ts` file, and it contains all types you defined in `.graphql` files, so you are be able to call your custom types for your typescript code, for example like resolvers
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+- graphql-to-typescript
+- gql-merge
+- babel-runtime
 
 ---

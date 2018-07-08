@@ -12,7 +12,7 @@
 - `path.join(__dirname, './')` returns `/files/current/directory/`
 
 ```javascript
-// sample code
+// sample code (code path = ~project-path/nuber-server/src/test.js)
 const path = require("path");
 const myPath = path.join(__dirname, "./");
 console.log(myPath);

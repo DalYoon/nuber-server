@@ -2,7 +2,7 @@
 
 ## section.log
 
-- add graphql-yoga dependencies
+- add graphql-yoga dependency
 - add middleware dependencies, and `@types` for each of them
 - code `./src/app.ts` for basic setting of graphql-yoga, middlewares
 
