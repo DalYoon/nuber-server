@@ -18,7 +18,6 @@
 package.json
 ...
 "script": {
-    ...
     "pretypes": "gql-merge --out-file ./src/schema.graphql ./src/api/**/*.graphql",
     "types": "graphql-to-typescript ./src/schema.graphql ./types/graph.d.ts",
 }
