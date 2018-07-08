@@ -25,7 +25,7 @@ package.json
 ```
 
 - to proceed merging process above, you need `babel-rumtime` as dev dependency
-- after all, you can get `graph.d.ts` file, and it contains all types you defined in `.graphql` files, so you are be able to call your custom types for your typescript code, for example like resolvers
+- after all, you can get `graph.d.ts` file, and it contains all types you defined in `.graphql` files, so you are able to call your custom types for your typescript code, for example like resolvers
 
 ## issue
 
