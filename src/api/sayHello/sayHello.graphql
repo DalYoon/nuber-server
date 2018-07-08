@@ -1,8 +1,0 @@
-type SayHelloResponse {
-  text: String!
-  err: Boolean!
-}
-
-type Query {
-  sayHello(name: String!): SayHelloResponse!
-}
