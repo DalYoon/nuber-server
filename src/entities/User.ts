@@ -25,7 +25,7 @@ class User extends BaseEntity {
   @Column({ type: "text" })
   lastName: string;
 
-  @Column({ type: "number" })
+  @Column({ type: "int" })
   age: number;
 
   @Column({ type: "text" })
@@ -40,9 +40,6 @@ class User extends BaseEntity {
   @Column({ type: "text", default: false })
   profilePhoto: string;
 
-  @Column({ type: "text" })
-  fullName: string;
-
   @Column({ type: "boolean" })
   isDriving: boolean;
 
@@ -52,11 +49,22 @@ class User extends BaseEntity {
   @Column({ type: "boolean" })
   isTaken: boolean;
 
-  // lastLng: float;
-  // lastLat: Float
-  // lastOrientation: Float
+  @Column({ type: "double precision", default: 0 })
+  lastLng: number;
+
+  @Column({ type: "double precision", default: 0 })
+  lastLat: number;
+
+  @Column({ type: "double precision", default: 0 })
+  lastOrientation: number;
+
+  get fullname(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
 
   @CreateDateColumn() createdAt: string;
 
   @UpdateDateColumn() updatedAt: string;
 }
+
+export default User;
