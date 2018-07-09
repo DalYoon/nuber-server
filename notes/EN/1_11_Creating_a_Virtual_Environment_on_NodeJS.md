@@ -2,7 +2,7 @@
 
 ## section.log
 
-- set `.env` file for connecting databse
+- set `.env` file to define additional project environment for connecting databse
 - create connection with database
 
 ## tips

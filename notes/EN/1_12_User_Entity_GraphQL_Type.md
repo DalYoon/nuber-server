@@ -2,7 +2,7 @@
 
 ## section.log
 
-- define user type
+- define user type `User.graphql`
 
 ## tips
 

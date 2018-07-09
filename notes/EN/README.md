@@ -368,7 +368,7 @@ export interface SayHelloQueryArgs {
 
 ## section.log
 
-- set `.env` file for connecting databse
+- set `.env` file to define additional project environment for connecting databse
 - create connection with database
 
 ## tips
@@ -402,7 +402,7 @@ import connectionOptions from "./ormConfig";
 
 ## section.log
 
-- define user type
+- define user type `User.graphql`
 
 ## tips
 
@@ -415,6 +415,34 @@ import connectionOptions from "./ormConfig";
 ## added dependencies
 
 ### dependencies
+
+### devDependencies
+
+---
+
+# 1.13 User Entity part One
+
+## section.log
+
+- write `User.ts` entity for `User model`
+
+## tips
+
+- `class validator` validates custom decorators like `email decorator`
+
+## issue
+
+- none
+
+## links
+
+- [class validator](https://github.com/typestack/class-validator)
+
+## added dependencies
+
+### dependencies
+
+- class-validator
 
 ### devDependencies
 
