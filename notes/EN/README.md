@@ -700,7 +700,10 @@ message: sayWhatever;
 
 ## tips
 
-- checkout `@OneToMany`, `@ManyToOne`, check the usage below
+- relationship definition process:
+  `add argument for joining other entity in each of types`
+  -> `use @OneToMany, @ManyToOne decorators to match column`
+- checkout the usage below
 
 ```typescript
 // entities/Classroom.ts
@@ -738,14 +741,9 @@ classroom: Classroom;
 
 ## section.log
 
-- very important lecture
 - define relationship between `User`, `Chat` entities
 
 ## tips
-
-- relationship definition process:
-  `add argument for joining other entity in each of types`
-  -> `use @OneToMany, @ManyToOne decorators to match column`
 
 ## issue
 

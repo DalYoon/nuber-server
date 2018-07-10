@@ -1,8 +1,8 @@
-# 1.23 Chat and Message Entities part Two
+# 1.24 Model Relationships like a Boss
 
 ## section.log
 
-- define relationship between `User`, `Chat` entities
+-
 
 ## tips
 

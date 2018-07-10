@@ -7,7 +7,10 @@
 
 ## tips
 
-- checkout `@OneToMany`, `@ManyToOne`, check the usage below
+- relationship definition process:
+  `add argument for joining other entity in each of types`
+  -> `use @OneToMany, @ManyToOne decorators to match column`
+- check out the usage below
 
 ```typescript
 // entities/Classroom.ts
