@@ -70,6 +70,9 @@ class User extends BaseEntity {
   @Column({ type: "double precision", default: 0 })
   lastOrientation: number;
 
+  @Column({ type: "text", nullable: true })
+  fbId: string;
+
   @ManyToOne(type => Chat, chat => chat.participants)
   chat: Chat;
 
