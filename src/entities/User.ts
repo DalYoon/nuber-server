@@ -11,7 +11,7 @@ import {
   BeforeUpdate
 } from "typeorm";
 
-const BCRYPT_ROUNDS;
+const BCRYPT_ROUNDS = 10;
 
 @Entity()
 class User extends BaseEntity {

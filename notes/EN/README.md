@@ -497,6 +497,7 @@ get fullname(): string {
 ## section.log
 
 - process for hashing password
+- `@BeforeInsert`, `@BeforeUpdate` decorators
 
 ## tips
 
@@ -536,3 +537,27 @@ get fullname(): string {
 ### dependencies
 
 ### devDependencies
+
+---
+
+# 1.17 Verification Entity part One
+
+## section.log
+
+- define type and entity for verification
+
+## tips
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---

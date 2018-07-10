@@ -3,6 +3,7 @@
 ## section.log
 
 - process for hashing password
+- `@BeforeInsert`, `@BeforeUpdate` decorators
 
 ## tips
 
