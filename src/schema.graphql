@@ -9,6 +9,22 @@ type Place {
   updatedAt: String
 }
 
+type Ride {
+  id: Int!
+  status: String!
+  pickUpAddress: String!
+  pickUpLat: Float!
+  pickUpLng: Float!
+  dropOffAddress: String!
+  dropOffLat: Float!
+  dropOffLng: Float!
+  price: Float!
+  distance: String!
+  duration: String!
+  createdAt: String!
+  updatedAt: String
+}
+
 type User {
   id: Int!
   email: String

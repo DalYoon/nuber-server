@@ -26,6 +26,7 @@ class Vericitation extends BaseEntity {
   @Column() used: boolean;
 
   @CreateDateColumn() createdAt: string;
+
   @UpdateDateColumn() updatedAt: string;
 
   @BeforeInsert()
