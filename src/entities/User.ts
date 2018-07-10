@@ -1,5 +1,5 @@
 import { IsEmail } from "class-validator";
-import bcrypt, { hash } from "bcrypt";
+import bcrypt from "bcrypt";
 import {
   BaseEntity,
   Column,

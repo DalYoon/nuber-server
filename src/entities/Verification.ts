@@ -1,17 +1,18 @@
 import {
-  Entity,
   BaseEntity,
-  PrimaryGeneratedColumn,
   Column,
   CreateDateColumn,
-  UpdateDateColumn
+  Entity,
+  UpdateDateColumn,
+  PrimaryGeneratedColumn
 } from "typeorm";
+import { verifitationTarget } from "../types/types";
 
 @Entity()
 class Vericitation extends BaseEntity {
   @PrimaryGeneratedColumn() id: number;
 
-  @Column() target: string;
+  @Column() target: verifitationTarget;
 
   @Column() payload: string;
 
