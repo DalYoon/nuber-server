@@ -23,7 +23,7 @@ import { sayWhatever } from 'path for <test.d.ts>'
 message: sayWhatever;
 ```
 
-- the code above, gives only limited available input strings for message column ("Hello, "Bye")
+- the code above, gives only limited available input strings to `message` column ("Hello, "Bye")
 
 ## issue
 

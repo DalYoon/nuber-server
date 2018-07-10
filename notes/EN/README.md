@@ -587,7 +587,7 @@ import { sayWhatever } from 'path for <test.d.ts>'
 message: sayWhatever;
 ```
 
-- the code above, gives only limited available input strings for message column ("Hello, "Bye")
+- the code above, gives only limited available input strings to `message` column ("Hello, "Bye")
 
 ## issue
 
@@ -765,6 +765,28 @@ classroom: Classroom;
 
 - define relationship between `User`, `Verification`
 - define relationship between `User`, `Ride`
+
+## tips
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.25 Resolver Types
+
+## section.log
+
+- define `resolver` definition
 
 ## tips
 
