@@ -696,7 +696,7 @@ message: sayWhatever;
 ## section.log
 
 - very important lecture
-- define entities and types for `Chat`, `Message`
+- define entities and types for `Chat`, `Message` and entity relationships
 
 ## tips
 
@@ -724,7 +724,7 @@ classroom: Classroom;
 
 ## links
 
-- [typeorm one-to-many, many-to-one relationship docs](https://github.com/typeorm/typeorm/blob/master/docs/many-to-one-one-to-many-relations.md)
+- [typeorm one-to-many, many-to-one relationship guide](https://github.com/typeorm/typeorm/blob/master/docs/many-to-one-one-to-many-relations.md)
 
 ## added dependencies
 
