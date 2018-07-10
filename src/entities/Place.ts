@@ -27,6 +27,7 @@ class Place extends BaseEntity {
   isFav: boolean;
 
   @CreateDateColumn() createdAt: string;
+
   @UpdateDateColumn() updatedAt: string;
 }
 
