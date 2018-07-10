@@ -3,11 +3,13 @@
 ## section.log
 
 - very important lecture
-- define entity and type for `Chat`
+- define relationship between `User`, `Chat` entities
 
 ## tips
 
-- checkout `@OneToMany`, `@ManyToOne`
+- relationship definition process:
+  `add argument for joining other entity in each of types`
+  -> `use @OneToMany, @ManyToOne decorators to match column`
 
 ## issue
 
