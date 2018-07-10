@@ -1,1 +1,1 @@
-export type verifitationTarget = "EMAIL" | "PHONE";
+export type verifitationTarget = "PHONE" | "EMAIL";
