@@ -15,6 +15,8 @@ import {
 
 import Chat from "./Chat";
 import Message from "./Message";
+import Ride from "./Ride";
+import Vericitation from "./Verification";
 
 const BCRYPT_ROUNDS = 10;
 
@@ -73,6 +75,15 @@ class User extends BaseEntity {
 
   @OneToMany(type => Message, message => message.user)
   messages: Message[];
+
+  @OneToMany(type => Vericitation, verification => verification.user)
+  verifications: Vericitation[];
+
+  @OneToMany(type => Ride, ride => ride.passenger)
+  ridesAsPassenger: Ride[];
+
+  @OneToMany(type => Ride, ride => ride.driver)
+  ridesAsDriver: Ride[];
 
   @CreateDateColumn() createdAt: string;
 

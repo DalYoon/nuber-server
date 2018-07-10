@@ -4,10 +4,13 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  ManyToOne,
   UpdateDateColumn,
   PrimaryGeneratedColumn
 } from "typeorm";
 import { verifitationTarget } from "../types/types";
+
+import User from "./User";
 
 const PHONE = "PHONE";
 const EMAIL = "EMAIL";
@@ -24,6 +27,9 @@ class Vericitation extends BaseEntity {
   @Column() key: string;
 
   @Column() used: boolean;
+
+  @ManyToOne(type => User, user => user.verifications)
+  user: User;
 
   @CreateDateColumn() createdAt: string;
 

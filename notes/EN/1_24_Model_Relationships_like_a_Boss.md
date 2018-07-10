@@ -2,7 +2,8 @@
 
 ## section.log
 
--
+- define relationship between `User`, `Verification`
+- define relationship between `User`, `Ride`
 
 ## tips
 
