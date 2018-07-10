@@ -36,6 +36,8 @@ Server for the (N)Uber clone on NomadAcademy, GraphQL, Typescript, NodeJS
 - [ ] Subscribe To Chat Room Messages
 - [ ] Send A chat Message
 
+---
+
 ## Code Challenge
 
 - [ ] Get Ride History
