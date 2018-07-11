@@ -16,7 +16,6 @@ import {
 import Chat from "./Chat";
 import Message from "./Message";
 import Ride from "./Ride";
-import Vericitation from "./Verification";
 
 const BCRYPT_ROUNDS = 10;
 
