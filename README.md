@@ -10,7 +10,7 @@ Server for the (N)Uber clone on NomadAcademy, GraphQL, Typescript, NodeJS
 
 ### Public Resolvers:
 
-- [ ] Sign In / Sign Up with Facebook
+- [x] Sign In / Sign Up with Facebook
 - [ ] Sign In with Email
 - [ ] Start phone number verification
 - [ ] Compolete phone number verification
@@ -20,6 +20,8 @@ Server for the (N)Uber clone on NomadAcademy, GraphQL, Typescript, NodeJS
 
 ### Private Resolvers:
 
+- [ ] Generate JWT
+- [ ] Verity JWT
 - [ ] Verify Email
 - [ ] Get My Profile
 - [ ] Update My Profile

@@ -40,10 +40,10 @@ class User extends BaseEntity {
   @Column({ type: "int", nullable: true })
   age: number;
 
-  @Column({ type: "text" })
+  @Column({ type: "text", nullable: true })
   password: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "text", nullable: true })
   phoneNumber: string;
 
   @Column({ type: "boolean", default: false })
@@ -52,13 +52,13 @@ class User extends BaseEntity {
   @Column({ type: "text", default: false })
   profilePhoto: string;
 
-  @Column({ type: "boolean" })
+  @Column({ type: "boolean", default: false })
   isDriving: boolean;
 
-  @Column({ type: "boolean" })
+  @Column({ type: "boolean", default: false })
   isRiding: boolean;
 
-  @Column({ type: "boolean" })
+  @Column({ type: "boolean", default: false })
   isTaken: boolean;
 
   @Column({ type: "double precision", default: 0 })

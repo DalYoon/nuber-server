@@ -12,12 +12,12 @@ const resolvers: Resolvers = {
 
       // filter existing user
       try {
-        const existingUser = await User.findOne(fbId);
+        const existingUser = await User.findOne({ fbId });
         if (existingUser) {
           return {
             ok: true,
             error: null,
-            token: "Coming Soon"
+            token: "Coming Soon, already"
           };
         }
       } catch (error) {
@@ -37,7 +37,7 @@ const resolvers: Resolvers = {
         return {
           ok: true,
           error: null,
-          token: "Coming Soon"
+          token: "Coming Soon, created"
         };
       } catch (error) {
         return {
