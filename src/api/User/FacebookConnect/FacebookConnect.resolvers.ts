@@ -8,10 +8,11 @@ const resolvers: Resolvers = {
       _,
       args: FacebookConnectMutationArgs
     ): Promise<FacebookConnectResponse> => {
+      const { fbId } = args;
+
       // filter existing user
       try {
-        const { fbId } = args;
-        const existingUser = User.findOne(fbId);
+        const existingUser = await User.findOne(fbId);
         if (existingUser) {
           return {
             ok: true,
@@ -27,8 +28,17 @@ const resolvers: Resolvers = {
         };
       }
 
-      // make new account
+      // create new account
       try {
+        await User.create({
+          ...args,
+          profilePhoto: `http://graph.facebook.com/${fbId}/picture?type=square`
+        }).save();
+        return {
+          ok: true,
+          error: null,
+          token: "Coming Soon"
+        };
       } catch (error) {
         return {
           ok: false,
