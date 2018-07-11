@@ -934,9 +934,9 @@ classroom: Classroom;
     - [x] in `entities/User.ts`, `@Column({ type: "text", nullable: true }) fbId: string;
     - [x] in `types/types.d.ts`, `FacebookConnectMutationArgs` fbId: string;
   - Reason
-    - in `resolver`, checking existing user
-      ~`const existingUser = await User.findOne(fbId)`~
-      `const existingUser = await User.findOne({ fbId })`
+    - in `resolver`, checking existing user<br>
+      ~`const existingUser = await User.findOne(fbId)`~<br>
+      `const existingUser = await User.findOne({ fbId })`<br>
 
 ## links
 
@@ -961,6 +961,53 @@ classroom: Classroom;
 - none
 
 ## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.33 EmailSignIn Resolver part Two
+
+## section.log
+
+- define email sign in resolver, type
+
+## tips
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.34 Introduction to Twilio
+
+## section.log
+
+- very important lecture
+- introduce **Twilio**
+
+## tips
+
+## issue
+
+- none
+
+## links
+
+[Twilio](https://www.twilio.com/)
 
 ## added dependencies
 

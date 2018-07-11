@@ -11,7 +11,7 @@ Server for the (N)Uber clone on NomadAcademy, GraphQL, Typescript, NodeJS
 ### Public Resolvers:
 
 - [x] Sign In / Sign Up with Facebook
-- [ ] Sign In with Email
+- [x] Sign In with Email
 - [ ] Start phone number verification
 - [ ] Compolete phone number verification
 - [ ] Sign Up with Email

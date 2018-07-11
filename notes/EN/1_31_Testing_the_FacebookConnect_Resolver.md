@@ -15,9 +15,9 @@
     - [x] in `entities/User.ts`, `@Column({ type: "text", nullable: true }) fbId: string;
     - [x] in `types/types.d.ts`, `FacebookConnectMutationArgs` fbId: string;
   - Reason
-    - in `resolver`, checking existing user
-      ~`const existingUser = await User.findOne(fbId)`~
-      `const existingUser = await User.findOne({ fbId })`
+    - in `resolver`, checking existing user<br>
+      ~`const existingUser = await User.findOne(fbId)`~<br>
+      `const existingUser = await User.findOne({ fbId })`<br>
 
 ## links
 
