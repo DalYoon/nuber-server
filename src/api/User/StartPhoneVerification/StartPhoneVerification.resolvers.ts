@@ -1,3 +1,4 @@
+import Verification from "../../../entities/Verification";
 import {
   StartPhoneVerificationResponse,
   StartPhoneVerificationMutationArgs
@@ -9,7 +10,26 @@ const resolvers: Resolvers = {
     StartPhoneVerification: async (
       _,
       args: StartPhoneVerificationMutationArgs
-    ): Promise<StartPhoneVerificationResponse> => ""
+    ): Promise<StartPhoneVerificationResponse> => {
+      const { phoneNumber } = args;
+      try {
+        const existingVerification = await Verification.findOne({ payload: phoneNumber });
+        if (existingVerification) {
+          existingVerification.remove();
+        }
+
+        const newVerification = await Verification.create({
+          target: "PHONE",
+          payload: phoneNumber
+        }).save();
+        // sending message
+      } catch (error) {
+        return {
+          ok: false,
+          error: error.message
+        };
+      }
+    }
   }
 };
 

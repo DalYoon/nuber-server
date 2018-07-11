@@ -16,7 +16,7 @@ const PHONE = "PHONE";
 const EMAIL = "EMAIL";
 
 @Entity()
-class Vericitation extends BaseEntity {
+class Verification extends BaseEntity {
   @PrimaryGeneratedColumn() id: number;
 
   @Column({ type: "text", enum: [PHONE, EMAIL] })
@@ -25,8 +25,6 @@ class Vericitation extends BaseEntity {
   @Column() payload: string;
 
   @Column() key: string;
-
-  @Column() used: boolean;
 
   @CreateDateColumn() createdAt: string;
 
@@ -44,4 +42,4 @@ class Vericitation extends BaseEntity {
   }
 }
 
-export default Vericitation;
+export default Verification;
