@@ -19,9 +19,14 @@ class Verification extends BaseEntity {
   @Column({ type: "text", enum: [PHONE, EMAIL] })
   target: verifitationTarget;
 
-  @Column() payload: string;
+  @Column({ type: "text" })
+  payload: string;
 
-  @Column() key: string;
+  @Column({ type: "text" })
+  key: string;
+
+  @Column({ type: "boolean", default: false })
+  verified: false;
 
   @CreateDateColumn() createdAt: string;
 
