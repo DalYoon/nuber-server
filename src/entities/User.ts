@@ -79,9 +79,6 @@ class User extends BaseEntity {
   @OneToMany(type => Message, message => message.user)
   messages: Message[];
 
-  @OneToMany(type => Vericitation, verification => verification.user)
-  verifications: Vericitation[];
-
   @OneToMany(type => Ride, ride => ride.passenger)
   ridesAsPassenger: Ride[];
 
