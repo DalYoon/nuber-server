@@ -26,6 +26,9 @@ const resolvers: Resolvers = {
             error: "Verification key not vaild",
             token: null
           };
+        } else {
+          verification.verified = true;
+          verification.save();
         }
       } catch (error) {
         return {
@@ -44,6 +47,12 @@ const resolvers: Resolvers = {
             ok: true,
             error: null,
             token: "Coming Soon"
+          };
+        } else {
+          return {
+            ok: true,
+            error: null,
+            token: null
           };
         }
       } catch (error) {

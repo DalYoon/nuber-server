@@ -13,7 +13,7 @@ Server for the (N)Uber clone on NomadAcademy, GraphQL, Typescript, NodeJS
 - [x] Sign In / Sign Up with Facebook
 - [x] Sign In with Email
 - [x] Start phone number verification
-- [ ] Compolete phone number verification
+- [x] Compolete phone number verification
 - [ ] Sign Up with Email
 
 ---

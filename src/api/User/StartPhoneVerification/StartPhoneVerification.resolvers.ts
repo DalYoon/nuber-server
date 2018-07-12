@@ -26,7 +26,6 @@ const resolvers: Resolvers = {
           target: "PHONE",
           payload: phoneNumber
         }).save();
-        console.log(newVerification);
         // send verification message after create it
         await sendVerification(newVerification.payload, newVerification.key);
         return {
