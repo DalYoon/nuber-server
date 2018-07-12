@@ -1,8 +1,8 @@
-# 1.43 Testing Authentication Resolvers
+# 1.44 Custom Auth Middleware on Express part One
 
 ## section.log
 
-- test!
+- start to make middleware for authentication
 
 ## tips
 
