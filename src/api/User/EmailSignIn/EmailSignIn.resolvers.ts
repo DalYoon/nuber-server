@@ -1,6 +1,7 @@
 import User from "../../../entities/User";
 import { EmailSignInMutationArgs, EmailSignInResponse } from "./../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
+import createJWT from "../../../utils/createJWT";
 
 const resolvers: Resolvers = {
   Mutation: {
@@ -13,7 +14,7 @@ const resolvers: Resolvers = {
         if (!user) {
           return {
             ok: false,
-            error: "No User found with that email",
+            error: "No User be found with that email",
             token: null
           };
         }
@@ -23,10 +24,11 @@ const resolvers: Resolvers = {
 
         // password checked as true
         if (checkPassword) {
+          const token = createJWT(user.id);
           return {
             ok: true,
             error: null,
-            token: "Coming Soon"
+            token
           };
         }
         // wrong password

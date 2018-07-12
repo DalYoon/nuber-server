@@ -27,7 +27,7 @@ verification {
 4.  then, resolver calls `sendSMS/sendVerification` with payload(phone number), key(generated above) - sending SMS
 5.  user checks the SMS(user's got key at thie point)
 6.  user input the key, then click `verify` button
-7.  the button calls `CompletePhoneVerification` mutation with payload(phone number), key(what user input in step 6
+7.  the button calls `CompletePhoneVerification` mutation with payload(phone number), key(what user input in step 6)
 8.  it finds the same pair in the Verification data
 9.  finish verification
     - if same pair be found, it finds the user who has same phone number and changes verification status<br>
