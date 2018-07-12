@@ -1125,7 +1125,7 @@ classroom: Classroom;
 
 ### phone verification process:
 
-1.  user input phone number and click `send verification key` button
+1.  user inputs phone number and click `send verification key` button
 2.  it calls `StartPhoneVerification` mutation with phone number to verify
 3.  `StartPhoneVericitaion` resolver inserts a verification data below
 
@@ -1147,8 +1147,31 @@ verification {
 8.  it finds the same pair in the Verification data
 9.  finish verification
     - if same pair be found, it finds the user who has same phone number and changes verification status<br>
+      `Verification.verified = true;`<br>
       `User.verifiedPhoneNumber = true;`
     - if the phone number and key are not matched, it returns an error
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.40 EmailSignUp Resolver
+
+## section.log
+
+- define type, resolver for `EmailSignUp`
+
+## tips
 
 ## issue
 

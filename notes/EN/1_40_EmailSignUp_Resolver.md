@@ -2,7 +2,7 @@
 
 ## section.log
 
--
+- define type, resolver for `EmailSignUp`
 
 ## tips
 

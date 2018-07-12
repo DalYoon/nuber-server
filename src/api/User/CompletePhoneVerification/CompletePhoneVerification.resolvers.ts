@@ -8,7 +8,7 @@ import { Resolvers } from "../../../types/resolvers";
 
 const resolvers: Resolvers = {
   Mutation: {
-    CompleteVerification: async (
+    CompletePhoneVerification: async (
       _,
       args: CompletePhoneVerificationMutationArgs
     ): Promise<CompletePhoneVerificationResponse> => {

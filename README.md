@@ -18,10 +18,15 @@ Server for the (N)Uber clone on NomadAcademy, GraphQL, Typescript, NodeJS
 
 ---
 
-### Private Resolvers:
+### Authentication:
 
 - [ ] Generate JWT
 - [ ] Verity JWT
+
+---
+
+### Private Resolvers:
+
 - [ ] Verify Email
 - [ ] Get My Profile
 - [ ] Update My Profile
