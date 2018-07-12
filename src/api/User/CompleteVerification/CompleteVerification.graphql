@@ -1,9 +1,9 @@
-type CompleteVerificationResponse {
+type CompletePhoneVerificationResponse {
   ok: Boolean!
   error: String
   token: String
 }
 
 type Mutation {
-  CompleteVerification(phoneNumber: String!, key: String!): CompleteVerificationResponse!
+  CompletePhoneVerification(phoneNumber: String!, key: String!): CompletePhoneVerificationResponse!
 }

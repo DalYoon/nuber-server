@@ -1,4 +1,4 @@
-import { FacebookConnectMutationArgs, FacebookConnectResponse } from "./../../../types/graph.d";
+import { FacebookConnectMutationArgs, FacebookConnectResponse } from "./../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
 import User from "../../../entities/User";
 

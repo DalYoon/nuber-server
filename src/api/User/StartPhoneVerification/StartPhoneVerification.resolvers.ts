@@ -2,7 +2,7 @@ import Verification from "../../../entities/Verification";
 import {
   StartPhoneVerificationResponse,
   StartPhoneVerificationMutationArgs
-} from "./../../../types/graph.d";
+} from "./../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
 import { sendVerification } from "../../../utils/sendSMS";
 
