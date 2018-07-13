@@ -8,10 +8,10 @@
 
 ## tips
 
-- types merging process:
+### types merging process:
 
-  1.  with `gql-merge`, merge all `.graphql` files in `./src/api/` into one file `./src/schema.graphql`
-  2.  with `graphql-to-typescript`, merge all types in `./src/schema.graphql` to `./src/types/graph.d.ts`
+1.  with `gql-merge`, merge all `.graphql` files in `./src/api/` into one file `./src/schema.graphql`
+2.  with `graphql-to-typescript`, merge all types in `./src/schema.graphql` to `./src/types/graph.d.ts`
 
 ```json
 // script sample
@@ -25,7 +25,8 @@ package.json
 ```
 
 - to proceed merging process above, you need `babel-rumtime` as dev dependency
-- after all, you can get `graph.d.ts` file, and it contains all types you defined in `.graphql` files, so you are able to call your custom types for your typescript code, for example like resolvers
+- after all, you can get `graph.d.ts` file, and it contains all types you defined in every `.graphql` files, <br>
+  so you are able to call your custom types for your typescript code, for example like resolvers
 
 ## issue
 
