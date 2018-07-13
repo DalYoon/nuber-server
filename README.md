@@ -4,7 +4,9 @@ Server for the (N)Uber clone on NomadAcademy, GraphQL, Typescript, NodeJS
 
 ## Course Note
 
-[Course notes](https://github.com/DalYoon/nuber-server/tree/master/notes/EN)
+This note was created by taking the lecture below
+[Nomad Academy Uber Clone](https://academy.nomadcoders.co/p/nuber-fullstack-javascript-graphql-course)
+[Dal's Course notes](https://github.com/DalYoon/nuber-server/tree/master/notes/EN)
 
 ## Resolvers
 

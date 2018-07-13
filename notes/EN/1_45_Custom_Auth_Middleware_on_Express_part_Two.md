@@ -2,7 +2,7 @@
 
 ## section.log
 
-- start to make middleware for authentication
+- define `decodeJWT`
 
 ## tips
 
