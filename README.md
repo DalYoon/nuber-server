@@ -29,8 +29,8 @@ This note was created by taking the lecture below<br>
 
 ### Private Resolvers:
 
+- [x] Get My Profile
 - [ ] Verify Email
-- [ ] Get My Profile
 - [ ] Update My Profile
 - [ ] Report Location / Orientation
 - [ ] Add Place
