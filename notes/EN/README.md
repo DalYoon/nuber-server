@@ -1325,11 +1325,39 @@ verification {
 5.  every resolvers takes `context` as argument, check the resolver type below
 
 ```typescript
-type Resolver = (parent, args, context, info)
+export type Resolver = (parent: any, args: any, context: any, info: any) => any;
+
+export interface Resolvers {
+  [key: string]: {
+    [key: string]: Resolver;
+  };
+}
 ```
 
 6.  you can get the information in `context` through resolver's 3rd argument(context)
 7.  then, do whatever you want
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.47 GetMyProfile Resolver
+
+## section.log
+
+- define `GetMyProfile` query
+
+## tips
 
 ## issue
 

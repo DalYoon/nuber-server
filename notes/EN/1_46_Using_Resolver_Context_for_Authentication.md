@@ -17,7 +17,13 @@
 5.  every resolvers takes `context` as argument, check the resolver type below
 
 ```typescript
-type Resolver = (parent, args, context, info)
+export type Resolver = (parent: any, args: any, context: any, info: any) => any;
+
+export interface Resolvers {
+  [key: string]: {
+    [key: string]: Resolver;
+  };
+}
 ```
 
 6.  you can get the information in `context` through resolver's 3rd argument(context)

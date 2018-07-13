@@ -88,7 +88,7 @@ class User extends BaseEntity {
 
   @UpdateDateColumn() updatedAt: string;
 
-  get fullname(): string {
+  get fullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 
