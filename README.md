@@ -23,7 +23,7 @@ This note is created by taking the lecture below<br>
 ### Authentication:
 
 - [x] Generate JWT
-- [ ] Verity JWT
+- [x] Verity JWT
 
 ---
 
