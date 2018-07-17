@@ -1603,6 +1603,12 @@ export interface Resolvers {
 
 ## tips
 
+### cleanNullArgs Function
+
+- between 1.57 and 1.57.1 there is little difference, `cleanNullArgs` <br>
+  you will define it on the lecture 1.59, don't be panic
+  it's just nothing more than seprating code that filtering null data
+
 ### exmaple for filtering the datas those have null value
 
 ```javascript
@@ -1669,6 +1675,29 @@ User.update({id: userId}, { firstName: "newFirstName"});
 ## section.log
 
 - define `ToggleDrivingMode` resolver
+
+## tips
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.59 ReportMovement Resolver
+
+## section.log
+
+- define `ReportMovement` resolver
+- separate `cleanNullArgs`
 
 ## tips
 

@@ -6,6 +6,12 @@
 
 ## tips
 
+### cleanNullArgs Function
+
+- between 1.57 and 1.57.1 there is little difference, `cleanNullArgs` <br>
+  you will define it on the lecture 1.59, don't be panic
+  it's just nothing more than seprating code that filtering null data
+
 ### exmaple for filtering the datas those have null value
 
 ```javascript
