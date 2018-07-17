@@ -34,10 +34,11 @@ This note is created by taking the lecture below<br>
 - [x] Verify Email
 - [x] Update My Profile
 - [x] Toggle Driving Mode
-- [ ] Report Location / Orientation
-- [ ] Add Place
+- [x] Report Location / Orientation
+- [x] Add Place
 - [ ] Edit Place
 - [ ] Delete Place
+- [ ] Get My Places
 - [ ] See Nearby Drivers
 - [ ] Subscription To Nearby Drivers
 - [ ] Request A Ride
