@@ -1645,10 +1645,32 @@ if(user) {
 User.update({id: userId}, { firstName: "newFirstName"});
 ```
 
-- 1, 2 both do same thing, find the data which has userId at id column and updates firName column to 'newFirstName'<br>
+- 1, 2 both do same thing, find the data which has userId at id column and updates firstName column to 'newFirstName'<br>
   but the code 1 calls `@BeforeUpdate`, and the code 2 doesn't<br>
   in the code above, `User` and `user` are different, `User` is User Entity itself, and `user` is a user instance from Entity<br>
   just make sure for that
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.58 ToggleDrivingMode Resolver
+
+## section.log
+
+- define `ToggleDrivingMode` resolver
+
+## tips
 
 ## issue
 

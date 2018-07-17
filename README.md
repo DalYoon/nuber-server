@@ -32,7 +32,8 @@ This note is created by taking the lecture below<br>
 - [x] Get My Profile
 - [x] Request Email Verification
 - [x] Verify Email
-- [ ] Update My Profile
+- [x] Update My Profile
+- [x] Toggle Driving Mode
 - [ ] Report Location / Orientation
 - [ ] Add Place
 - [ ] Edit Place
