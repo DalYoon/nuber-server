@@ -36,8 +36,8 @@ This note is created by taking the lecture below<br>
 - [x] Toggle Driving Mode
 - [x] Report Location / Orientation
 - [x] Add Place
-- [ ] Edit Place
-- [ ] Delete Place
+- [x] Edit Place
+- [x] Delete Place
 - [ ] Get My Places
 - [ ] See Nearby Drivers
 - [ ] Subscription To Nearby Drivers
