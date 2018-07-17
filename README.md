@@ -30,8 +30,8 @@ This note is created by taking the lecture below<br>
 ### Private Resolvers:
 
 - [x] Get My Profile
-- [ ] Request Email Verification
-- [ ] Verify Email
+- [x] Request Email Verification
+- [x] Verify Email
 - [ ] Update My Profile
 - [ ] Report Location / Orientation
 - [ ] Add Place
