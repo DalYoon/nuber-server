@@ -1,9 +1,10 @@
-# 1.67 DriversSubscription part Two
+# 1.68 Authenticating WebSocket Subscriptions part One
 
 ## section.log
 
 - very important lecture
-- add publishment for `DriversSubscription` in `ReportMovement` resolver
+- define subscription option
+- authorization with subscription
 
 ## tips
 
