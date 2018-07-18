@@ -8,9 +8,11 @@
 
 ### cleanNullArgs Function
 
-- between 1.57 and 1.57.1 there is little difference, `cleanNullArgs` <br>
-  you will define it on the lecture 1.59, don't be panic
-  it's just nothing more than seprating code that filtering null data
+- bjust for everyone's information,<br>
+  between 1.57 and 1.57.1 there is a little difference, 'cleanNullArgs' function that imported above<br>
+  you will define it at the lecture 1.59<br>
+  this function basically does same thing with we just did in 1.57 <br>
+  it just takes an object, and filters out null datas from the object , and then, returns new object that doesn't contain any null datas in it
 
 ### exmaple for filtering the datas those have null value
 

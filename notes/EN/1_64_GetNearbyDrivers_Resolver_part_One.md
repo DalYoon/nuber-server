@@ -1,12 +1,10 @@
-# 1.63 GetMyPlaces Resolver and Testing
+# 1.64 GetNearbyDrivers Resolver part One
 
 ## section.log
 
-- define `GetMyPlaces` resolver
+- define `GetNearbyDrivers` resolver
 
 ## tips
-
-- how to get the datas in relational field
 
 ## issue
 
