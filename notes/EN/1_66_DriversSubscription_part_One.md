@@ -4,6 +4,7 @@
 
 - very important lecture
 - introduce pub sub service
+- make channel to subscribe
 - define `DriversSubscription` resolver
 
 ## tips
