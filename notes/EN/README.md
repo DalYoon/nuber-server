@@ -1940,7 +1940,8 @@ User.update({id: userId}, { firstName: "newFirstName"});
 1.  put JWT token in header (client)
 2.  on graphql-yoga options, get JWT header with `onConnect` (server)
 3.  decode JWT token, and return it as `currentUser`
-4.  then, you can get `currentUser` in `request.connection.context.currentUser`
+4.  get `currentUser` from `request.connection.context.currentUser`
+5.  then, put `currentUser` into `request.context`
 
 ```typescript
 // in graphql-yoga options, step 1 - 3
@@ -1962,7 +1963,7 @@ subscriptions: {
 ```
 
 ```typescript
-// in graphQL server contructor step 4
+// in graphQL server contructor step 4 - 5
 this.app = new GraphQLServer({
   schema,
   context: req => {
