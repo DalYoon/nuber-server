@@ -8,6 +8,8 @@
 
 ## tips
 
+### Ative Record vs Data Mapper (from typeorm docs)
+
 > In TypeORM you can use both the Active Record and the Data Mapper patterns.
 
 > Using the Active Record approach, you define all your query methods inside the model itself, and you save, remove, and load objects using model methods.
