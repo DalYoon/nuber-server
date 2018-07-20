@@ -6,8 +6,8 @@ const resolvers = {
     DriversSubscription: {
       subscribe: withFilter(
         (_, __, { pubSub }) => pubSub.asyncIterator("driverUpdate"),
-        (payload, _, { context }) => {
-          const user: User = context.currentUser;
+        async (payload, _, { context }) => {
+          const user: User = await context.currentUser;
           const {
             DriversSubscription: { lastLat: driverLastLat, lastLng: driverLastLng }
           } = payload;

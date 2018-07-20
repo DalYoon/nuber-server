@@ -39,8 +39,8 @@ This note is created by taking the lecture below<br>
 - [x] Edit Place
 - [x] Delete Place
 - [x] Get My Places
-- [ ] See Nearby Drivers
-- [ ] Subscription To Nearby Drivers
+- [x] See Nearby Drivers
+- [x] Subscription To Nearby Drivers
 - [ ] Request A Ride
 - [ ] Get Nearby Ride Request
 - [ ] Subscribe To Nearby Ride Request
