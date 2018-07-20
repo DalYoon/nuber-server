@@ -2074,7 +2074,29 @@ async (payload, _, { context }) => {
   const user: User = await context.currentUser;
 ```
 
-- And it works, I don't know why Nicolas's code works without `async`. `await`
+- And it works, I don't know why Nicolas's code works without `async`, `await`
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.72 RequestRide Resolver
+
+## section.log
+
+- define `RequestRide` resolver
+
+## tips
+
+## issue
+
+- none
 
 ## links
 
