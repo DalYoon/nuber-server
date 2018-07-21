@@ -10,7 +10,7 @@ const resolvers = {
           const user: User = await context.currentUser;
           const {
             DriversSubscription: { lastLat: driverLastLat, lastLng: driverLastLng }
-          } = payload;
+          } = await payload;
           const { lastLat: userLastLat, lastLng: userLastLng } = user;
           return (
             driverLastLat <= userLastLat + 0.5 &&

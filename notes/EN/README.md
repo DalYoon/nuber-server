@@ -2107,3 +2107,47 @@ async (payload, _, { context }) => {
 ### devDependencies
 
 ---
+
+# 1.73 GetNearbyRides Resolver
+
+## section.log
+
+- define `GetNearbyRides` resolver
+
+## tips
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
+
+# 1.74 NearbyRideSubscription
+
+## section.log
+
+- define `NearbyRidesSubscription` resolver
+
+## tips
+
+## issue
+
+- none
+
+## links
+
+## added dependencies
+
+### dependencies
+
+### devDependencies
+
+---
