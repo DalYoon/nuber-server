@@ -59,7 +59,7 @@ async (payload, _, { context }) => {
   const user: User = await context.currentUser;
 ```
 
-- And it works, I don't know why Nicolas's code works without `async`, `await`
+- And it works, I don't know why it needs `async`, `await`, even `currentUser` information is given as argument
 
 ## links
 
