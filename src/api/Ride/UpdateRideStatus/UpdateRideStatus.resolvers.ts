@@ -12,13 +12,35 @@ const resolvers: Resolvers = {
 
         if (user.isDriving) {
           try {
-            const ride = await Ride.findOne({
-              id: args.rideId,
-              status: "REQUESTING"
-            });
+            let ride: Ride | undefined;
+
+            // driver is looking ride for accepting, which has current state as requesting
+            if (args.status === "ACCEPTED") {
+              ride = await Ride.findOne({
+                id: args.rideId,
+                status: "REQUESTING"
+              });
+
+              // if there is requesting ride, update driver
+              if (ride) {
+                ride.driver = user;
+                user.isTaken = true;
+                user.save();
+              }
+            } else {
+              ride = await Ride.findOne({
+                id: args.rideId,
+                driver: user
+              });
+            }
+
             if (ride) {
               ride.status = args.status;
               ride.save();
+              return {
+                ok: true,
+                error: null
+              };
             } else {
               return {
                 ok: false,
@@ -28,9 +50,14 @@ const resolvers: Resolvers = {
           } catch (error) {
             return {
               ok: false,
-              error: null
+              error: error.message
             };
           }
+        } else {
+          return {
+            ok: false,
+            error: "You are not a driver"
+          };
         }
       }
     )
