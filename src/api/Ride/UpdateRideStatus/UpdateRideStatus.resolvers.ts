@@ -7,7 +7,11 @@ import Ride from "../../../entities/Ride";
 const resolvers: Resolvers = {
   Mutation: {
     UpdateRideStatus: privateResolver(
-      async (_, args: UpdateRideStatusMutationArgs, { req }): Promise<UpdateRideStatusResponse> => {
+      async (
+        _,
+        args: UpdateRideStatusMutationArgs,
+        { req, pubSub }
+      ): Promise<UpdateRideStatusResponse> => {
         const user: User = req.user;
 
         if (user.isDriving) {
@@ -37,6 +41,7 @@ const resolvers: Resolvers = {
             if (ride) {
               ride.status = args.status;
               ride.save();
+              pubSub.publish("rideUpdate", { RideStatusSubscription: ride });
               return {
                 ok: true,
                 error: null

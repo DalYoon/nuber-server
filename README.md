@@ -45,8 +45,8 @@ This note is created by taking the lecture below<br>
 - [x] Get Nearby Ride Request
 - [x] Subscribe To Nearby Ride Request
 - [x] Update Ride Status
-- [ ] Get Ride
-- [ ] Subscribe To Ride Status
+- [x] Get Ride
+- [x] Subscribe To Ride Status
 - [ ] Subscribe To Chat Room Messages
 - [ ] Send A chat Message
 
