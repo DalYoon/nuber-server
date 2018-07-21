@@ -41,9 +41,10 @@ This note is created by taking the lecture below<br>
 - [x] Get My Places
 - [x] See Nearby Drivers
 - [x] Subscription To Nearby Drivers
-- [ ] Request A Ride
-- [ ] Get Nearby Ride Request
-- [ ] Subscribe To Nearby Ride Request
+- [x] Request A Ride
+- [x] Get Nearby Ride Request
+- [x] Subscribe To Nearby Ride Request
+- [ ] Update Ride Status
 - [ ] Subscribe To Ride Status
 - [ ] Subscribe To Chat Room Messages
 - [ ] Send A chat Message

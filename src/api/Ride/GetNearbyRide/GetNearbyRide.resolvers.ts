@@ -7,7 +7,7 @@ import User from "../../../entities/User";
 
 const resolvers: Resolvers = {
   Query: {
-    GetNearByRide: privateResolver(
+    GetNearbyRide: privateResolver(
       async (_, __, { req }): Promise<GetNearbyRideResponse> => {
         const user: User = req.user;
 
