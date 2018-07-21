@@ -11,7 +11,7 @@
 
 ### getting user lastLat, lastLng
 
-- in the lecture, there is no `async`, `await` in the second argument function of `withFilter`, check the below
+- in the lecture, there is no `async`, `await` on the second argument function of `withFilter`, check the below
 
 ```typescript
 // the original code in the lecture
