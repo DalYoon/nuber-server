@@ -21,9 +21,6 @@ const resolvers: Resolvers = {
                 ride
               };
             } else {
-              console.log("user id: ", user.id);
-              console.log("driver id:", ride.driverId);
-              console.log("passengerId: ", ride.passengerId);
               return {
                 ok: false,
                 error: "Not Authorized",
