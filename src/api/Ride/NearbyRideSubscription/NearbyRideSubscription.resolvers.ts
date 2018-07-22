@@ -6,11 +6,11 @@ const resolvers = {
     NearbyRideSubscription: {
       subscribe: withFilter(
         (_, __, { pubSub }) => pubSub.asyncIterator("rideRequest"),
-        async (payload, __, { context }) => {
-          const user: User = await context.currentUser;
+        (payload, __, { context }) => {
+          const user: User = context.currentUser;
           const {
             NearbyRideSubscription: { pickUpLat, pickUpLng }
-          } = await payload;
+          } = payload;
           const { lastLat: driverLastLat, lastLng: driverLastLng } = user;
           return (
             pickUpLat >= driverLastLat - 0.05 &&

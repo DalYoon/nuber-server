@@ -5,11 +5,11 @@ const resolvers = {
     RideStatusSubscription: {
       subscribe: withFilter(
         (_, __, { pubSub }) => pubSub.asyncIterator("rideUpdate"),
-        async (payload, __, { context }) => {
-          const user: User = await context.currentUser;
+        (payload, __, { context }) => {
+          const user: User = context.currentUser;
           const {
             RideStatusSubscription: { driverId, passengerId }
-          } = await payload;
+          } = payload;
           return driverId === user.id || passengerId === user.id;
         }
       )

@@ -6,11 +6,11 @@ const resolvers = {
     DriversSubscription: {
       subscribe: withFilter(
         (_, __, { pubSub }) => pubSub.asyncIterator("driverUpdate"),
-        async (payload, _, { context }) => {
-          const user: User = await context.currentUser;
+        (payload, _, { context }) => {
+          const user: User = context.currentUser;
           const {
             DriversSubscription: { lastLat: driverLastLat, lastLng: driverLastLng }
-          } = await payload;
+          } = payload;
           const { lastLat: userLastLat, lastLng: userLastLng } = user;
           return (
             driverLastLat <= userLastLat + 0.5 &&
