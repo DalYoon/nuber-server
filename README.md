@@ -47,9 +47,9 @@ This note is created by taking the lecture below<br>
 - [x] Update Ride Status
 - [x] Get Ride
 - [x] Subscribe To Ride Status
-- [ ] Create Chat Room
-- [ ] Subscribe To Chat Room Messages
-- [ ] Send A chat Message
+- [x] Create Chat Room
+- [x] Subscribe To Chat Room Messages
+- [x] Send A chat Message
 
 ---
 
