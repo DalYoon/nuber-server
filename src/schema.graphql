@@ -20,6 +20,7 @@ type Chat {
   passenger: User!
   driverId: Int!
   driver: User!
+  rideId: Int!
   ride: Ride!
   createdAt: String!
   updatedAt: String
@@ -126,6 +127,7 @@ type Ride {
   passenger: User!
   driverId: Int
   driver: User!
+  chatId: Int
   chat: Chat
   createdAt: String!
   updatedAt: String

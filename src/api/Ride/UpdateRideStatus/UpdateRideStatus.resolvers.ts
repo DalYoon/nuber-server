@@ -21,10 +21,13 @@ const resolvers: Resolvers = {
 
             // driver is looking ride for accepting, which has current state as requesting
             if (args.status === "ACCEPTED") {
-              ride = await Ride.findOne({
-                id: args.rideId,
-                status: "REQUESTING"
-              });
+              ride = await Ride.findOne(
+                {
+                  id: args.rideId,
+                  status: "REQUESTING"
+                },
+                { relations: ["passenger"] }
+              );
 
               // if there is requesting ride, update driver
               if (ride) {
