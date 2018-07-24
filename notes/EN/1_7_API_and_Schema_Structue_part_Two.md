@@ -2,8 +2,8 @@
 
 ## section.log
 
-- write `./src/schema.ts` file for merging `query`, `resolvers`
-- get `.graphql`, `resolvers` file with through `fileLoader/merge-graphql-schemas`
+- write `./src/schema.ts` file for merging `types`, `resolvers`
+- get `.graphql`, `resolvers` files with through `fileLoader/merge-graphql-schemas`
 - merge it, put it into `makeExcutableSchema/graphql-tools`
 - put generated schema into `GraphqlServer.schema`
 
