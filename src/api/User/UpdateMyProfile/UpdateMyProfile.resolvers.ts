@@ -12,7 +12,7 @@ const resolvers: Resolvers = {
         const notNull: any = cleanNullArgs(args);
 
         // if there is new password
-        if (notNull.password !== null) {
+        if (notNull.password !== null && notNull.password !== undefined) {
           user.password = notNull.password;
           user.save();
           delete notNull.password;
