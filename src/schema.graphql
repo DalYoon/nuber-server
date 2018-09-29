@@ -135,7 +135,7 @@ type Ride {
   passengerId: Int!
   passenger: User!
   driverId: Int
-  driver: User!
+  driver: User
   chatId: Int
   chat: Chat
   createdAt: String!
@@ -145,6 +145,7 @@ type Ride {
 type UpdateRideStatusResponse {
   ok: Boolean!
   error: String
+  rideId: Int
 }
 
 enum StatusOptions {

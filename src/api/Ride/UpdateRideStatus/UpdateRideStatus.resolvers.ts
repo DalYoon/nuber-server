@@ -26,7 +26,7 @@ const resolvers: Resolvers = {
                   id: args.rideId,
                   status: "REQUESTING"
                 },
-                { relations: ["passenger"] }
+                { relations: ["passenger", "driver"] }
               );
 
               // if there is requesting ride, update driver
@@ -43,10 +43,13 @@ const resolvers: Resolvers = {
                 ride.save();
               }
             } else {
-              ride = await Ride.findOne({
-                id: args.rideId,
-                driver: user
-              });
+              ride = await Ride.findOne(
+                {
+                  id: args.rideId,
+                  driver: user
+                },
+                { relations: ["passenger", "driver"] }
+              );
             }
 
             if (ride) {
@@ -55,24 +58,28 @@ const resolvers: Resolvers = {
               pubSub.publish("rideUpdate", { RideStatusSubscription: ride });
               return {
                 ok: true,
-                error: null
+                error: null,
+                rideId: ride.id
               };
             } else {
               return {
                 ok: false,
-                error: "Can't update ride"
+                error: "Can't update ride",
+                rideId: null
               };
             }
           } catch (error) {
             return {
               ok: false,
-              error: error.message
+              error: error.message,
+              rideId: null
             };
           }
         } else {
           return {
             ok: false,
-            error: "You are not a driver"
+            error: "You are not a driver",
+            rideId: null
           };
         }
       }
