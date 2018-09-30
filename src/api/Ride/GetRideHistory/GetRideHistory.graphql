@@ -1,0 +1,10 @@
+type GetRideHistoryResponse {
+  ok: Boolean!
+  error: String
+  ridesAsPassenger: [Ride]
+  ridesAsDriver: [Ride]
+}
+
+type Query {
+  GetRideHistory: GetRideHistoryResponse!
+}
