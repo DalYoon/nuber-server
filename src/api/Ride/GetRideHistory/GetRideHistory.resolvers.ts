@@ -14,7 +14,16 @@ const resolvers: Resolvers = {
 
           const userInfo = await User.findOne(
             { id },
-            { relations: ["ridesAsPassenger", "ridesAsDriver"] }
+            {
+              relations: [
+                "ridesAsPassenger",
+                "ridesAsPassenger.driver",
+                "ridesAsPassenger.passenger",
+                "ridesAsDriver",
+                "ridesAsDriver.driver",
+                "ridesAsDriver.passenger"
+              ]
+            }
           );
 
           if (!userInfo) {

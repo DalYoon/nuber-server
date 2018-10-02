@@ -15,6 +15,7 @@
     "@types/node": "^10.5.2",
     "@types/twilio": "^0.0.9",
     "babel-runtime": "^6.26.0",
+    "copy": "^0.3.2",
     "gql-merge": "^0.0.6",
     "graphql-to-typescript": "^0.1.2",
     "nodemon": "^1.17.5",
@@ -26,7 +27,10 @@
     "predev": "yarn run types",
     "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql",
     "pretypes": "gql-merge --out-file ./src/schema.graphql ./src/api/**/*.graphql",
-    "types": "graphql-to-typescript ./src/schema.graphql ./src/types/graph.d.ts"
+    "types": "graphql-to-typescript ./src/schema.graphql ./src/types/graph.d.ts",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "postbulid": "cd src && copy ./api/**/*.graphql ../dist/api"
   },
   "dependencies": {
     "bcrypt": "^3.0.0",

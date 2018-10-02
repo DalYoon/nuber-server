@@ -42,7 +42,10 @@ const resolvers: Resolvers = {
                 ride.chat = chat;
                 ride.save();
               }
-            } else {
+            }
+
+            // after ride has been accepted
+            else {
               ride = await Ride.findOne(
                 {
                   id: args.rideId,
@@ -53,6 +56,19 @@ const resolvers: Resolvers = {
             }
 
             if (ride) {
+              // finish the ride
+              if (args.status === "FINISHED") {
+                const driver: User | undefined = await User.findOne({ id: ride.driverId });
+                const passenger: User | undefined = await User.findOne({ id: ride.passengerId });
+
+                if (driver && passenger) {
+                  driver.isTaken = false;
+                  passenger.isRiding = false;
+                  driver.save();
+                  passenger.save();
+                }
+              }
+
               ride.status = args.status;
               ride.save();
               pubSub.publish("rideUpdate", { RideStatusSubscription: ride });

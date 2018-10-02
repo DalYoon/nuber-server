@@ -55,5 +55,5 @@ This note is created by taking the lecture below<br>
 
 ## Code Challenge
 
-- [ ] Get Ride History
-- [ ] See Ride Detail
+- [x] Get Ride History
+- [x] See Ride Detail
