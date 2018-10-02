@@ -30,7 +30,7 @@
     "types": "graphql-to-typescript ./src/schema.graphql ./src/types/graph.d.ts",
     "prebuild": "rm -rf dist",
     "build": "tsc",
-    "postbulid": "cd src && copy ./api/**/*.graphql ../dist/api"
+    "postbuild": "cd src && copy ./api/**/*.graphql ../dist/api"
   },
   "dependencies": {
     "bcrypt": "^3.0.0",
