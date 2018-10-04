@@ -9,7 +9,6 @@ const resolvers: Resolvers = {
       const { email, password } = args;
       try {
         const user = await User.findOne({ email });
-
         // user doesn't exist
         if (!user) {
           return {
@@ -20,8 +19,9 @@ const resolvers: Resolvers = {
         }
 
         // user exist, password check
+        console.log(password);
+        console.log(user.password);
         const checkPassword = await user.comparePassword(password);
-
         // password checked as true
         if (checkPassword) {
           const token = createJWT(user.id);

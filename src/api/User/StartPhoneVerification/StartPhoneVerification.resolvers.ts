@@ -4,7 +4,7 @@ import {
   StartPhoneVerificationMutationArgs
 } from "./../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
-import { sendVerification } from "../../../utils/sendSMS";
+// import { sendVerification } from "../../../utils/sendSMS";
 
 const resolvers: Resolvers = {
   Mutation: {
@@ -22,12 +22,16 @@ const resolvers: Resolvers = {
         }
 
         // create new verification
-        const newVerification = await Verification.create({
+        // const newVerification = await Verification.create({
+        await Verification.create({
           target: "PHONE",
           payload: phoneNumber
         }).save();
         // send verification message after create it
-        await sendVerification(newVerification.payload, newVerification.key);
+
+        // SMS off
+        // await sendVerification(newVerification.payload, newVerification.key);
+
         return {
           ok: true,
           error: null

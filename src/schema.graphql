@@ -44,6 +44,7 @@ type Mutation {
   StartPhoneVerification(phoneNumber: String!): StartPhoneVerificationResponse!
   ToggleDrivingMode: ToggleDrivingModeResponse!
   UpdateMyProfile(firstName: String, lastName: String, email: String, password: String, profilePhoto: String, age: Int): UpdateMyProfileResponse!
+  SkipPhoneVerification(phoneNumber: String!): SkipPhoneVerificationResponse!
 }
 
 type Chat {
@@ -268,4 +269,9 @@ type Verification {
   verified: Boolean!
   createdAt: String!
   updatedAt: String!
+}
+
+type SkipPhoneVerificationResponse {
+  ok: Boolean!
+  error: String
 }

@@ -21,7 +21,8 @@ const BCRYPT_ROUNDS = 10;
 
 @Entity()
 class User extends BaseEntity {
-  @PrimaryGeneratedColumn() id: number;
+  @PrimaryGeneratedColumn()
+  id: number;
 
   @Column({ type: "text", nullable: true })
   @IsEmail()
@@ -90,9 +91,11 @@ class User extends BaseEntity {
   @OneToMany(type => Place, place => place.user)
   places: Place[];
 
-  @CreateDateColumn() createdAt: string;
+  @CreateDateColumn()
+  createdAt: string;
 
-  @UpdateDateColumn() updatedAt: string;
+  @UpdateDateColumn()
+  updatedAt: string;
 
   get fullName(): string {
     return `${this.firstName} ${this.lastName}`;

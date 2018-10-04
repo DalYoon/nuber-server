@@ -1,0 +1,8 @@
+type SkipPhoneVerificationResponse {
+  ok: Boolean!
+  error: String
+}
+
+type Mutation {
+  SkipPhoneVerification(phoneNumber: String!): SkipPhoneVerificationResponse!
+}

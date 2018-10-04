@@ -13,15 +13,7 @@
     "@types/mailgun-js": "^0.16.0",
     "@types/morgan": "^1.7.35",
     "@types/node": "^10.5.2",
-    "@types/twilio": "^0.0.9",
-    "babel-runtime": "^6.26.0",
-    "copy": "^0.3.2",
-    "gql-merge": "^0.0.6",
-    "graphql-to-typescript": "^0.1.2",
-    "nodemon": "^1.17.5",
-    "ts-node": "^7.0.0",
-    "tslint-config-prettier": "^1.13.0",
-    "typescript": "^2.9.2"
+    "@types/twilio": "^0.0.9"
   },
   "scripts": {
     "predev": "yarn run types",
@@ -30,7 +22,8 @@
     "types": "graphql-to-typescript ./src/schema.graphql ./src/types/graph.d.ts",
     "prebuild": "rm -rf dist",
     "build": "tsc",
-    "postbuild": "cd src && copy ./api/**/*.graphql ../dist/api"
+    "postbuild": "cd src && copy ./api/**/*.graphql ../dist/api",
+    "start": "cd dist && node ."
   },
   "dependencies": {
     "bcrypt": "^3.0.0",
@@ -46,6 +39,18 @@
     "morgan": "^1.9.0",
     "pg": "^7.4.3",
     "twilio": "^3.17.5",
-    "typeorm": "^0.2.7"
+    "typeorm": "^0.2.7",
+    "babel-runtime": "^6.26.0",
+    "copy": "^0.3.2",
+    "gql-merge": "^0.0.6",
+    "graphql-to-typescript": "^0.1.2",
+    "nodemon": "^1.17.5",
+    "ts-node": "^7.0.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.2"
+  },
+  "now": {
+    "name": "nuber-server",
+    "dotenv": ".env.production"
   }
 }
